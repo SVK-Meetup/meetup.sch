@@ -1,5 +1,7 @@
 ### meetup.sch site
 
+[![Build Status](https://travis-ci.com/tormachris/meetup.sch.svg?branch=startup)](https://travis-ci.com/tormachris/meetup.sch)
+
 #### deploy
 
 a következő packagekre lesz szükséged: node npm
