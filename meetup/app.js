@@ -69,6 +69,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 /// running application
-app.listen('3003', '127.0.0.1', function(){
-    console.log('Express server listening on 127.0.0.1 port ' + '3003');
+///Ha pusholsz, a bind IP-t allitsd 0.0.0.0-ra, mert kulonben nem fog menni
+app.listen('3003', '0.0.0.0', function(){
+    console.log('Express server listening on 0.0.0.0 port ' + '3003');
 });
