@@ -2,8 +2,6 @@ FROM node
 
 WORKDIR /app
 
-RUN mkdir /db
-
 COPY ./meetup/package*.json ./
 
 RUN npm install
@@ -11,5 +9,7 @@ RUN npm install
 COPY ./meetup/ ./
 
 EXPOSE 3003
+
+VOLUME "/db"
 
 CMD ["node","app.js"]
